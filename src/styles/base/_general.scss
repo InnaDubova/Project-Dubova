@@ -2,4 +2,93 @@ h1, h2, h3, h4, h5, h6, ul, body {
     margin: 0;
     padding: 0;
 }
+h1{
+    @include font(35px,$font-bold,$pr4-dark-2);
+ }
+ h2{
+     @include font(33px,$font-medium,$pr4-dark-2); 
+     &:hover{
+         color: $light;
+         background-color: $primary-1;
+     }
+ }
+ h3{
+    @include font(27px,$font-sb,$pr4-dark-2);
+ }
+ h4{
+    @include font(22px,$font-medium,$pr4-dark-2);
+ }
+ h5{
+    @include font(17px,$font-medium,$pr4-dark-2);
+ }
+ h6{
+    @include font(15px,$font-medium,$pr4-dark-2);
+ }
 
+ .subtitle{
+     @include subtitle;
+     &:hover{
+        color: $light;
+        background-color: $primary-1;
+    }
+ }
+ .Quotation{
+     @include Quotation;
+ }
+ .btn1{
+     @include btn(220px,$primary-2,50px,$font-sb); 
+     text-transform: uppercase;
+     &:hover{
+         background-color: $pr2-light-1;
+     }
+     &[disabled]{
+        background-color: $pr4-light-2;
+     }
+    }
+    .btn2{
+        @include btn(280px,$primary-1,50px,$font-medium); 
+        text-transform: capitalize;
+        &:hover{
+            background-color: $pr1-light-1;
+        }
+        &[disabled]{
+           background-color: $pr4-light-2;
+        }
+       }
+    .btn3{
+        @include btn(200px,$primary-1,50px,$font-medium); 
+        text-transform: capitalize;
+        &:hover{
+            background-color: $pr1-light-1;
+        }
+        &[disabled]{
+           background-color: $pr4-light-2;
+        }
+       }
+       .btn4{
+        @include btn(220px,$light,50px,$font-sb,1px solid $primary-2,$primary-2); 
+        text-transform: uppercase;
+        &:hover{
+            background-color: $pr2-light-1;
+            color: $light;
+        }
+        &[disabled]{
+           background-color: $pr4-light-2;
+           color: $light;
+        }
+       }
+       .btn5{
+        @include btn(200px,$light,50px,$font-sb,1px solid $primary-1,$primary-1); 
+        text-transform: capitalize;
+        &:hover{
+            background-color: $pr1-light-1;
+            color: $light;
+        }
+        &[disabled]{
+           background-color: $pr4-light-2;
+           color: $light;
+        }
+       }
+
+ 
+ 

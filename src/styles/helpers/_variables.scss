@@ -1,8 +1,10 @@
 
 $primary-1:#03a9f4;
-$primary-2:#a75e2e;
-$primary-3:#ccfa4d;
+$primary-2:#f75e2e;
+$primary-3:#ecfa4d;
 $primary-4:#656a70;
+$light:#ffff;
+$dark:#0000;
 
 $pr1-light-1: mix(#fff,$primary-1,40%);
 $pr2-light-1: mix(#fff,$primary-2,40%);
@@ -39,4 +41,7 @@ $font-medium:'Pop-m';
 $font-bold:'Pop-b';
 $font-sb:'Pop-sb';
 $font-os:'Open Sans';
+$font-gab:'Gab';
+$font-osit:'OpS-it';
+$font-light:'Pop-lg';
 

@@ -38,5 +38,33 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Pop-lg';
+    src: url('Poppins-Light.woff2') format('woff2'),
+        url('Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gab';
+    src: url('Gabriela-Regular.woff2') format('woff2'),
+        url('Gabriela-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpS-it';
+    src: url('OpenSans-Italic.woff2') format('woff2'),
+        url('OpenSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
 
 

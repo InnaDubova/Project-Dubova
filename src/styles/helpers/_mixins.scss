@@ -1,8 +1,46 @@
-%box-shadow{
+
+@mixin box-shadow{
     box-shadow: 5px 5px 10px #000;
     border-radius: 30px;
     background-color: lightpink;
     border: groove darkslateblue 5px;
     padding: 20px;
-    te
+    text-align:center;
 }
+@mixin font ($size:35px,$font:$font-medium,$color:$pr4-dark-3){
+    font-size: $size;
+    font-family: $font;
+    color: $color;
+    padding: 10px;
+}
+@mixin subtitle ($size:20px,$font:$font-medium,$color:$primary-4){
+    font-size: $size;
+    font-family: $font;
+    color: $color;
+    padding: 10px;
+}
+@mixin Quotation($size:17px,$font:$font-regular,$color:$primary-1) {
+    font-size: $size;
+    font-family: $font;
+    color: $color;
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #e6f7fe;
+    border-left: solid 1px $primary-1;
+}
+@mixin list($size:15px,$font:$font-medium,$color:$primary-4) {
+    font-size: $size;
+    font-family: $font;
+    color: $color;
+    padding: 10px;
+}
+@mixin btn ($wight,$bg,$height:50px,$font:$font-medium,$border:none,$color:$light) {
+    width: $wight;
+    background-color: $bg;
+    height: $height;
+    font-family: $font;
+    color: $color;
+    border: $border;
+    border-radius: 5px;
+}
+    
