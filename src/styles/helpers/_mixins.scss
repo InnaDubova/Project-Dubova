@@ -42,5 +42,19 @@
     color: $color;
     border: $border;
     border-radius: 5px;
+    margin-top: 20px;
+}
+@mixin dropdown ($wight,$bg,$height:50px,$font:$font-regular,$border:solid 1px $primary-4,$color:$primary-4) {
+    width: $wight;
+    background-color: $bg;
+    height: $height;
+    font-family: $font;
+    color: $color;
+    border: $border;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 2%;
+    
 }
     

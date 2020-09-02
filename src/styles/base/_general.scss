@@ -1,94 +1,241 @@
-h1, h2, h3, h4, h5, h6, ul, body {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+body {
     margin: 0;
     padding: 0;
 }
-h1{
-    @include font(35px,$font-bold,$pr4-dark-2);
- }
- h2{
-     @include font(33px,$font-medium,$pr4-dark-2); 
-     &:hover{
-         color: $light;
-         background-color: $primary-1;
-     }
- }
- h3{
-    @include font(27px,$font-sb,$pr4-dark-2);
- }
- h4{
-    @include font(22px,$font-medium,$pr4-dark-2);
- }
- h5{
-    @include font(17px,$font-medium,$pr4-dark-2);
- }
- h6{
-    @include font(15px,$font-medium,$pr4-dark-2);
- }
 
- .subtitle{
-     @include subtitle;
-     &:hover{
+h1 {
+    @include font(35px, $font-bold, $pr4-dark-2);
+}
+
+h2 {
+    @include font(33px, $font-medium, $pr4-dark-2);
+
+    &:hover {
         color: $light;
         background-color: $primary-1;
     }
- }
- .Quotation{
-     @include Quotation;
- }
- .btn1{
-     @include btn(220px,$primary-2,50px,$font-sb); 
-     text-transform: uppercase;
-     &:hover{
-         background-color: $pr2-light-1;
-     }
-     &[disabled]{
-        background-color: $pr4-light-2;
-     }
-    }
-    .btn2{
-        @include btn(280px,$primary-1,50px,$font-medium); 
-        text-transform: capitalize;
-        &:hover{
-            background-color: $pr1-light-1;
-        }
-        &[disabled]{
-           background-color: $pr4-light-2;
-        }
-       }
-    .btn3{
-        @include btn(200px,$primary-1,50px,$font-medium); 
-        text-transform: capitalize;
-        &:hover{
-            background-color: $pr1-light-1;
-        }
-        &[disabled]{
-           background-color: $pr4-light-2;
-        }
-       }
-       .btn4{
-        @include btn(220px,$light,50px,$font-sb,1px solid $primary-2,$primary-2); 
-        text-transform: uppercase;
-        &:hover{
-            background-color: $pr2-light-1;
-            color: $light;
-        }
-        &[disabled]{
-           background-color: $pr4-light-2;
-           color: $light;
-        }
-       }
-       .btn5{
-        @include btn(200px,$light,50px,$font-sb,1px solid $primary-1,$primary-1); 
-        text-transform: capitalize;
-        &:hover{
-            background-color: $pr1-light-1;
-            color: $light;
-        }
-        &[disabled]{
-           background-color: $pr4-light-2;
-           color: $light;
-        }
-       }
+}
 
- 
- 
+h3 {
+    @include font(27px, $font-sb, $pr4-dark-2);
+}
+
+h4 {
+    @include font(22px, $font-medium, $pr4-dark-2);
+}
+
+h5 {
+    @include font(17px, $font-medium, $pr4-dark-2);
+}
+
+h6 {
+    @include font(15px, $font-medium, $pr4-dark-2);
+}
+
+.subtitle {
+    @include subtitle;
+
+    &:hover {
+        color: $light;
+        background-color: $primary-1;
+    }
+}
+
+.Quotation {
+    @include Quotation;
+}
+
+.btn1 {
+    @include btn(220px, $primary-2, 50px, $font-sb);
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: $pr2-light-1;
+    }
+
+    &[disabled] {
+        background-color: $pr4-light-2;
+    }
+}
+
+.btn2 {
+    @include btn(280px, $primary-1, 50px, $font-medium);
+    text-transform: capitalize;
+
+    &:hover {
+        background-color: $pr1-light-1;
+    }
+
+    &[disabled] {
+        background-color: $pr4-light-2;
+    }
+}
+
+.btn3 {
+    @include btn(200px, $primary-1, 50px, $font-medium);
+    text-transform: capitalize;
+
+    &:hover {
+        background-color: $pr1-light-1;
+    }
+
+    &[disabled] {
+        background-color: $pr4-light-2;
+    }
+}
+
+.btn4 {
+    @include btn(220px, $light, 50px, $font-sb, 1px solid $primary-2, $primary-2);
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: $pr2-light-1;
+        color: $light;
+    }
+
+    &[disabled] {
+        background-color: $pr4-light-2;
+        color: $light;
+    }
+}
+
+.btn5 {
+    @include btn(200px, $light, 50px, $font-sb, 1px solid $primary-1, $primary-1);
+    text-transform: capitalize;
+
+    &:hover {
+        background-color: $pr1-light-1;
+        color: $light;
+    }
+
+    &[disabled] {
+        background-color: $pr4-light-2;
+        color: $light;
+    }
+}
+.button1 {
+    @include btn(150px, $primary-2, 40px, $font-sb);
+    text-transform: uppercase;
+    font-size: 13px;
+
+    &:hover {
+        background-color: $pr2-light-1;
+    }
+
+    &[disabled] {
+        background-color: $pr4-light-2;
+    }
+}
+
+.button2 {
+    @include btn(170px, $primary-1, 40px, $font-medium);
+    text-transform: capitalize;
+    font-size: 13px;
+    &:hover {
+        background-color: $pr1-light-1;
+    }
+    &[disabled] {
+        background-color: $pr4-light-2;
+    }
+}
+
+.button3 {
+    @include btn(150px, $primary-1, 40px, $font-medium);
+    text-transform: capitalize;
+    font-size: 13px;
+    &:hover {
+        background-color: $pr1-light-1;
+    }
+    &[disabled] {
+        background-color: $pr4-light-2;
+    }
+}
+
+.button4 {
+    @include btn(150px, $light, 40px, $font-sb, 1px solid $primary-2, $primary-2);
+    text-transform: capitalize;
+    font-size: 13px;
+    &:hover {
+        background-color: $pr2-light-1;
+        color: $light;
+    }
+    &[disabled] {
+        background-color: $pr4-light-2;
+        color: $light;
+    }
+}
+
+.button5 {
+    @include btn (150px, $light,40px, $font-sb, 1px solid $primary-1, $primary-1);
+    text-transform: capitalize;
+    font-size: 13px;
+    &:hover {
+        background-color: $pr1-light-1;
+        color: $light;
+    }
+    &[disabled] {
+        background-color: $pr4-light-2;
+        color: $light;
+    }
+}
+
+.placeholder {
+    @include dropdown (320px, $bg:$pr4-light-2);
+    font-size: 13px;
+    &:hover {
+        background-color: $light;
+    }
+    &:active {
+        border: solid 1px $primary-1;
+    }
+}
+
+.number {
+    @include dropdown (355px, $bg:$pr4-light-2);
+    border-left: none;
+    border-right: none;
+    padding: 0;
+    text-align: center;
+    button {
+        width: 49px;
+        height: 49px;
+        border: solid 1px $primary-4;
+        background-color: $light;
+        border-radius: 5%;
+        font-size: 25px;
+    }
+    button:hover {
+        filter: drop-shadow(2px 2px 2px $primary-4);
+    }
+    .raz {
+        all: unset;
+        -moz-appearance: textfield;
+        width: 245px;
+        text-align: center;
+    }
+    .raz::-webkit-inner-spin-button {
+        display: none;
+    }
+}
+
+.form-control {
+    @include dropdown (320px, $bg:$pr4-light-2);
+    font-size: 13px;
+    padding: 0 20px;
+    &:hover {
+        background-color: $light;
+    }
+    &:active {
+        border: solid 1px $primary-1;
+    }
+    option {
+        height: 50px;
+    }
+}
