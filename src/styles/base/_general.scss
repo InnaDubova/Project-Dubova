@@ -52,6 +52,8 @@ h6 {
     @include Quotation;
 }
 
+//BTN//
+
 .btn1 {
     @include btn(220px, $primary-2, 50px, $font-sb);
     text-transform: uppercase;
@@ -120,6 +122,7 @@ h6 {
         color: $light;
     }
 }
+
 .button1 {
     @include btn(150px, $primary-2, 40px, $font-sb);
     text-transform: uppercase;
@@ -138,9 +141,11 @@ h6 {
     @include btn(170px, $primary-1, 40px, $font-medium);
     text-transform: capitalize;
     font-size: 13px;
+
     &:hover {
         background-color: $pr1-light-1;
     }
+
     &[disabled] {
         background-color: $pr4-light-2;
     }
@@ -150,9 +155,11 @@ h6 {
     @include btn(150px, $primary-1, 40px, $font-medium);
     text-transform: capitalize;
     font-size: 13px;
+
     &:hover {
         background-color: $pr1-light-1;
     }
+
     &[disabled] {
         background-color: $pr4-light-2;
     }
@@ -162,10 +169,12 @@ h6 {
     @include btn(150px, $light, 40px, $font-sb, 1px solid $primary-2, $primary-2);
     text-transform: capitalize;
     font-size: 13px;
+
     &:hover {
         background-color: $pr2-light-1;
         color: $light;
     }
+
     &[disabled] {
         background-color: $pr4-light-2;
         color: $light;
@@ -173,29 +182,38 @@ h6 {
 }
 
 .button5 {
-    @include btn (150px, $light,40px, $font-sb, 1px solid $primary-1, $primary-1);
+    @include btn (150px, $light, 40px, $font-sb, 1px solid $primary-1, $primary-1);
     text-transform: capitalize;
     font-size: 13px;
+
     &:hover {
         background-color: $pr1-light-1;
         color: $light;
     }
+
     &[disabled] {
         background-color: $pr4-light-2;
         color: $light;
     }
 }
 
+//placeholder//
 .placeholder {
     @include dropdown (320px, $bg:$pr4-light-2);
     font-size: 13px;
+    outline: 0 !important;
+
     &:hover {
         background-color: $light;
     }
+
     &:active {
         border: solid 1px $primary-1;
     }
+
 }
+
+//Number of pages//
 
 .number {
     @include dropdown (355px, $bg:$pr4-light-2);
@@ -203,6 +221,7 @@ h6 {
     border-right: none;
     padding: 0;
     text-align: center;
+
     button {
         width: 49px;
         height: 49px;
@@ -211,31 +230,369 @@ h6 {
         border-radius: 5%;
         font-size: 25px;
     }
+
     button:hover {
         filter: drop-shadow(2px 2px 2px $primary-4);
     }
+
     .raz {
         all: unset;
         -moz-appearance: textfield;
-        width: 245px;
+        width: 248px;
         text-align: center;
     }
+
     .raz::-webkit-inner-spin-button {
         display: none;
     }
 }
 
-.form-control {
-    @include dropdown (320px, $bg:$pr4-light-2);
+//Dropdawn//
+.dropbtn {
+    @include dropdown(320px, $bg:$pr4-light-2);
+    background-color: $light;
+    border: solid 1px $primary-4;
+    color: $primary-4;
+    padding: 16px;
     font-size: 13px;
-    padding: 0 20px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: $light;
+    min-width: 320px;
+    border: solid 1px $primary-4;
+    border-radius: 2%;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: $primary-4;
+    font-family: $font-regular;
+    font-size: 14px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: $pr1-light-3;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn:hover {
+    border: solid 1px $primary-1;
+}
+
+.dropbtn:active {
+    border: solid 1px $primary-1;
+}
+
+//Success//
+.form-horizontal {
+    margin-top: 20px;
+    font-family: $font-regular;
+    font-size: 13px;
+    position: relative;
+
+}
+
+.has-success .form-control {
+    width: 320px;
+    height: 50px;
+    border-color: $primary-5;
+    color: $primary-5;
+}
+
+.has-success .form-control-feedback {
+    color: $primary-5;
+}
+
+.has-error .form-control-feedback {
+    color: $primary-2;
+}
+
+.has-error .form-control {
+    width: 320px;
+    height: 50px;
+    border-color: $primary-2;
+    color: $primary-2;
+}
+
+.form-horizontal .has-feedback .form-control-feedback {
+    margin: 8px 30px;
+    position: absolute;
+}
+
+//checkbox// 
+
+.checkbox.style-a {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox.style-a input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox.style-a input:checked~.checkbox__checkmark {
+    background-color: $primary-1;
+    border: solid 1px $primary-1;
+}
+
+.checkbox.style-a input:checked~.checkbox__checkmark:after {
+    opacity: 1;
+}
+
+.checkbox.style-a:hover input~.checkbox__checkmark {
+    border: solid 1px $primary-1;
+}
+
+.checkbox.style-a .checkbox__checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: $light;
+    border: 1px solid $pr4-light-1;
+    transition: background-color 0.25s ease;
+    border-radius: 3px;
+}
+
+.checkbox.style-a .checkbox__checkmark:after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 4px;
+    width: 6px;
+    height: 10px;
+    border: solid $light;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+//radio//
+
+input[type=radio] {
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.radiobox {
+    width: 25px;
+    height: 25px;
+    border: 1px solid $pr4-light-1;
+
     &:hover {
-        background-color: $light;
+        border: 1px solid $primary-1;
     }
-    &:active {
-        border: solid 1px $primary-1;
-    }
-    option {
-        height: 50px;
-    }
+}
+
+/////////
+
+/* Базовый контейнер табов */
+.tabs {
+    min-width: 320px;
+    max-width: 800px;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.tabs>section {
+    display: none;
+    padding: 15px;
+    background: #fff;
+}
+
+.tabs>section>p {
+    margin: 0 0 5px;
+    line-height: 1.5;
+    color: $pr4-dark-2;
+    font-family: $font-regular;
+    font-size: 15px;
+}
+
+.tabs>input {
+    display: none;
+    position: absolute;
+}
+
+.tabs>label {
+    display: inline-block;
+    margin: 0 -2px;
+    padding: 15px 25px;
+    text-align: center;
+    color: $pr4-light-2;
+    font-family: $font-regular;
+    font-size: 14px;
+    border-bottom: 2px solid $pr4-light-2;
+
+}
+
+
+.tabs>label:hover {
+    color: #888;
+    cursor: pointer;
+}
+
+.tabs>input:checked+label {
+    color: $primary-2;
+    font-family: $font-regular;
+    font-size: 14px;
+    border-bottom: 2px solid $primary-2;
+}
+
+#tab1:checked~#content-tab1,
+#tab2:checked~#content-tab2,
+#tab3:checked~#content-tab3,
+#tab4:checked~#content-tab4 {
+    display: block;
+}
+
+
+
+//////
+.pagin {
+    display: inline-block;
+}
+
+.pagin a {
+    color: $pr4-light-1;
+    font-family: $font-medium;
+    font-size: 13px;
+    float: left;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.pagin a.active {
+    background-color: $primary-1;
+    color: white;
+    border-radius: 50%;
+}
+
+.pagin a:hover:not(.active) {
+    background-color: $primary-1;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+//////dotted
+ 
+  .pagination{
+    padding: 30px 0;
+  }
+  
+  .pagination ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .pagination a{
+    display: inline-block;
+    
+  }
+
+  
+  .p6 a{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    padding: 0;
+    margin: 5px;
+    text-align: center;
+    position: relative;
+    background-color: $pr4-light-1;
+  }
+  
+  .p6 .is-active{
+    background-color: $light;
+    border: 4px solid $primary-1;
+  }
+  .p6 a:hover{
+    background-color: $light;
+    border: 4px solid $primary-1;
+  }
+  
+////Social pics
+
+.icons{
+    font-size: 15px;
+}
+.icons i{
+    margin-left: 40px;
+}
+.icons i:hover:nth-child(1){
+    color:#3b5999;
+}
+
+.icons i:hover:nth-child(2){
+    color:#55acef;
+}
+.icons i:hover:nth-child(3){
+    color:#c1182a;
+}
+.icons i:hover:nth-child(4){
+    color:#de4b39;
+}
+.icons-f{
+    font-size: 15px;
+    color: $light;
+    margin: 20px;
+    padding: 20px 0;
+    width: 300px;
+    height: 70px;
+    background-color: $primary-1;
+}
+.icons-f i{
+    margin-left: 30px;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    border: solid 1px $light;
+    border-radius: 50%;
+}
+.icons-f i:hover{
+    background-color: $pr1-dark-1;
+    border: none;
+}
+
+/////Information popup
+
+.information{
+    width: 320px;
+    height: 180px;
+    margin: 10px 20px;
+    border: solid 1px $pr4-light-1;
+    text-align: center ;
+    
+}
+.information p{
+    font-family: $font-light;
+    font-size: 13px;
+    color: $pr4-dark-2 ;
+    padding: 25px;
 }
