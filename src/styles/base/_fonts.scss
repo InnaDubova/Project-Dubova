@@ -47,23 +47,47 @@
     font-display: swap;
 }
 
+// @font-face {
+//     font-family: 'Gab';
+//     src: url(../../fonts/Gab/Gabriela-Regular.woff2) format('woff2'),
+//         url(../../fonts/Gab/Gabriela-Regular.woff) format('woff');
+//     font-weight: 400;   
+//     font-style: normal;
+//     font-display: swap;
+// }
+
 @font-face {
-    font-family: 'Gab';
-    src: url('Gabriela-Regular.woff2') format('woff2'),
-        url('Gabriela-Regular.woff') format('woff');
+    font-family: 'OpS-it';
+    src: url(../../fonts/openSans/OpenSans-Italic.woff2) format('woff2'),
+        url(../../fonts/openSans/OpenSans-Italic.woff) format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gabriola';
+    // src: url(../../fonts/Gab/Gabriola.woff2) format('woff2'),
+    //     url(../../fonts/Gab/Gabriola.woff) format('woff');
+    src: url(../../fonts/Gab/gabriola.ttf);
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
+
 @font-face {
-    font-family: 'OpS-it';
-    src: url('OpenSans-Italic.woff2') format('woff2'),
-        url('OpenSans-Italic.woff') format('woff');
+    font-family: 'Myriad Pro';
+    src: url(../../fonts/Myriad/MyriadPro-Regular.woff2) format('woff2'),
+        url(../../fonts/Myriad/MyriadPro-Regular.woff) format('woff');
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
     font-display: swap;
 }
+
+
+
+
 
 
 

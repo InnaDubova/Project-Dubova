@@ -9,6 +9,92 @@ body {
     margin: 0;
     padding: 0;
 }
+$primary-1:#03a9f4;
+$primary-2:#f75e2e;
+$primary-3:#ecfa4d;
+$primary-4:#656a70;
+$primary-5:#09a912;
+$primary-6:#f44747;
+$primary-7:#ffaa33;
+$primary-8:#21a5f8;
+$light:#ffff;
+$dark:#0000;
+
+$pr1-light-1: mix(#fff,$primary-1,40%);
+$pr2-light-1: mix(#fff,$primary-2,40%);
+$pr3-light-1: mix(#fff,$primary-3,40%);
+$pr4-light-1: mix(#fff,$primary-4,40%);
+
+$pr1-light-2: mix(#fff,$primary-1,75%);
+$pr2-light-2: mix(#fff,$primary-2,75%);
+$pr3-light-2: mix(#fff,$primary-3,75%);
+$pr4-light-2: mix(#fff,$primary-4,75%);
+
+$pr1-light-3: mix(#fff,$primary-1,90%);
+$pr2-light-3: mix(#fff,$primary-2,90%);
+$pr3-light-3: mix(#fff,$primary-3,90%);
+$pr4-light-3: mix(#fff,$primary-4,90%);
+
+$pr1-dark-1: mix(#000,$primary-1,20%);
+$pr2-dark-1: mix(#000,$primary-2,20%);
+$pr3-dark-1: mix(#000,$primary-3,20%);
+$pr4-dark-1: mix(#000,$primary-4,20%);
+
+$pr1-dark-2: mix(#000,$primary-1,50%);
+$pr2-dark-2: mix(#000,$primary-2,50%);
+$pr3-dark-2: mix(#000,$primary-3,50%);
+$pr4-dark-2: mix(#000,$primary-4,50%);
+
+$pr1-dark-3: mix(#000,$primary-1,70%);
+$pr2-dark-3: mix(#000,$primary-2,70%);
+$pr3-dark-3: mix(#000,$primary-3,70%);
+$pr4-dark-3: mix(#000,$primary-4,70%);
+
+$font-regular:'Pop-r';
+$font-medium:'Pop-m';
+$font-bold:'Pop-b';
+$font-sb:'Pop-sb';
+$font-os:'Open Sans';
+$font-gab:'Gab';
+$font-osit:'OpS-it';
+$font-light:'Pop-lg';
+$font-gabriola: 'Gabriola';
+$font-myriad:'Myriad Pro';
+
+// ul{
+//     list-style-type: none;
+//     @include list;
+//     li{
+//         position: relative;
+//         display: flex;
+//         align-items: center;
+        
+
+//         &::before{
+//             content: '';
+//             display: block;
+//             width: 10px;
+//             height: 10px;
+//             background-color: $primary-1;
+//             position: relative;
+//             border-radius: 50%;
+//             margin-right: 5px;
+//         }
+//         &::after{
+//             content: '';
+//             display: block;
+//             width: 6px;
+//             height: 3px;
+//             border: solid 1px #fff;
+//             border-width:0 0 1px 1px ;
+//             transform: rotate(-45deg);
+//             position: absolute;
+//             left: 2px;
+
+//         }
+//     }
+// }
+
 
 h1 {
     @include font(35px, $font-bold, $pr4-dark-2);
@@ -157,7 +243,7 @@ h6 {
     font-size: 13px;
 
     &:hover {
-        background-color: $pr1-light-1;
+        background-color: $pr1-light-2;
     }
 
     &[disabled] {
@@ -259,7 +345,7 @@ h6 {
 }
 
 .dropdown {
-    position: relative;
+    // position: relative;
     display: inline-block;
 }
 
