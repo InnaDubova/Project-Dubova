@@ -1,0 +1,562 @@
+.banner-info {
+    background-color: $pr1-light-3;
+    background-image: url(../../../img/img_cloud.png);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: bottom;
+    padding-top: 30px;
+
+}
+
+.city {
+    position: absolute;
+    font-size: 100%;
+}
+
+.banner-block {
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.blue {
+    color: $primary-1;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+.banner-block>.btn1 {
+    margin-bottom: 150px;
+}
+
+.dropbtn {
+    @include dropdown(200px, $bg:$pr4-light-2);
+    background-color: $light;
+    border: solid 1px $primary-4;
+    color: $primary-4;
+    padding: 16px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.dropdown-b {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 130px;
+    background-color: $primary-1;
+    top: 665px;
+}
+
+.girl {
+    position: absolute;
+    top: -447px;
+    right: 100px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $light;
+    width: 200px;
+    border: solid 1px $primary-4;
+    border-radius: 2%;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: $primary-4;
+    font-family: $font-regular;
+    font-size: 14px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: $pr1-light-3;
+    text-decoration: none;
+}
+
+.dropdown-1:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-2:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-3:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn:hover {
+    border: solid 1px $primary-1;
+}
+
+.dropbtn:active {
+    border: solid 1px $primary-1;
+}
+
+.btn3 {
+    background-color: $pr1-dark-1;
+    margin-top: 30px;
+}
+
+.drop-t {
+    margin: -15px 10px 10px 10px;
+    display: block;
+    position: relative;
+}
+
+.drop-t h6 {
+    color: $light;
+    font-size: 13px;
+}
+
+.drop-t img {
+    position: absolute;
+    top: 57px;
+    left: 175px;
+}
+
+.number {
+    width: 200px;
+    margin-top: 0;
+}
+
+.number .raz {
+    width: 114px;
+    margin-bottom: 5px;
+}
+
+@media (min-width: 1200px) {
+    .banner-info {
+        background-color: $pr1-light-3;
+        background-image: url(../../../img/img_cloud.png);
+        background-repeat: no-repeat;
+        background-size: 130%;
+        background-position: bottom;
+        padding-top: 30px;
+
+    }
+
+    .banner-block {
+        margin-top: 100px;
+    }
+
+    .banner-block h1 {
+        font-size: 42px;
+        margin: 0;
+    }
+
+    .tabs {
+        width: 500px;
+        padding: 0;
+    }
+
+    .tabs>section>p {
+        width: 500px;
+        font-size: 17px;
+    }
+
+    .tabs>label {
+        padding: 15px 25px;
+    }
+
+    .tabs>input:checked+label {
+        width: 60px;
+    }
+
+    .dropdown-b {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        height: 135px;
+        background-color: $primary-1;
+        top: 665px;
+    }
+
+    .girl {
+        position: absolute;
+        top: -447px;
+        right: 100px;
+        width: 330px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: $light;
+        width: 200px;
+        border: solid 1px $primary-4;
+        border-radius: 2%;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: $primary-4;
+        font-family: $font-regular;
+        font-size: 14px;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: $pr1-light-3;
+        text-decoration: none;
+    }
+
+    .dropdown-1:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-2:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-3:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropbtn:hover {
+        border: solid 1px $primary-1;
+    }
+
+    .dropbtn:active {
+        border: solid 1px $primary-1;
+    }
+
+    .btn3 {
+        background-color: $pr1-dark-1;
+        margin-top: 30px;
+        width: 200px;
+        height: 50px;
+    }
+
+    .drop-t {
+        margin: -15px 10px 10px 10px;
+        display: block;
+        position: relative;
+
+    }
+
+    .drop-t:nth-of-type(4) {
+        margin: -18px 10px 10px 10px;
+    }
+
+    .drop-t h6 {
+        color: $light;
+        font-size: 13px;
+    }
+
+    .drop-t img {
+        position: absolute;
+        top: 57px;
+        left: 175px;
+    }
+
+    .dropbtn {
+        width: 200px;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .number {
+        width: 200px;
+        height: 50px;
+        margin-top: 0;
+    }
+
+    .number button {
+        width: 49px;
+        height: 49px;
+    }
+
+    .number .raz {
+        width: 93px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .banner-block {
+        margin-top: 60px;
+    }
+
+    .banner-block h1 {
+        font-size: 37px;
+        margin: 0;
+    }
+
+    .tabs {
+        width: 500px;
+    }
+
+    .tabs>section>p {
+        width: 500px;
+        font-size: 17px;
+    }
+
+    .tabs>label {
+        padding: 15px 25px;
+    }
+
+    .tabs>input:checked+label {
+        width: 60px;
+    }
+
+    .banner-info {
+        background-size: 110%;
+        background-position: bottom center;
+        padding-top: 30px;
+
+    }
+
+    .dropdown-b {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        height: 125px;
+        background-color: $primary-1;
+        top: 615px;
+    }
+
+    .girl {
+        top: -447px;
+        right: 15px;
+        width: 330px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: $light;
+        width: 160px;
+        border: solid 1px $primary-4;
+        border-radius: 2%;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: $primary-4;
+        font-family: $font-regular;
+        font-size: 14px;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: $pr1-light-3;
+        text-decoration: none;
+    }
+
+    .dropdown-1:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-2:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-3:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropbtn:hover {
+        border: solid 1px $primary-1;
+    }
+
+    .dropbtn:active {
+        border: solid 1px $primary-1;
+    }
+
+    .btn3 {
+        background-color: $pr1-dark-1;
+        margin-top: 30px;
+        width: 160px;
+        height: 40px;
+    }
+
+    .drop-t {
+        margin: -15px 10px 10px 10px;
+        display: block;
+        position: relative;
+    }
+
+    .drop-t:nth-of-type(4) {
+        margin: -17px 10px 10px 10px;
+    }
+
+    .drop-t h6 {
+        color: $light;
+        font-size: 13px;
+    }
+
+    .drop-t img {
+        position: absolute;
+        top: 52px;
+        left: 140px;
+    }
+
+    .number {
+        width: 160px;
+        margin-top: 0;
+        height: 40px;
+    }
+
+    .number .raz {
+        width: 74px;
+        margin-bottom: 5px;
+    }
+
+    .dropbtn {
+        width: 160px;
+        height: 40px;
+        padding: 10px;
+    }
+
+    .number button {
+        width: 39px;
+        height: 39px;
+    }
+}
+
+@media (min-width: 768px) {
+    .banner-block {
+        margin-top: 40px;
+
+    }
+
+    .banner-block h1 {
+        font-size: 37px;
+        margin: 0;
+    }
+
+    .tabs {
+        width: 500px;
+        padding: 0;
+    }
+
+    .tabs>section>p {
+        width: 500px;
+        font-size: 17px;
+    }
+
+    .tabs>label {
+       padding: 15px 25px;
+    }
+
+    .tabs>input:checked+label {
+        width: 40px;
+    }
+
+    .dropdown-b {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        height: 210px;
+        background-color: $primary-1;
+        top: 600px;
+    }
+
+    .girl {
+        top: -320px;
+        right: 0;
+        width: 235px;
+    }
+
+    .number .raz {
+        width: 93px;
+        margin-bottom: 5px;
+    }
+
+    .drop-t:nth-of-type(4) {
+        margin: -48px 10px 10px 10px;
+    }
+
+    .btn3 {
+        background-color: $pr1-dark-1;
+        margin-top: -15px;
+        width: 200px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 320px) {
+    .banner-info {
+        background-color: $pr1-light-3;
+        background-image: url(../../../img/img_cloud.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center bottom;
+        padding-top: 30px;
+
+    }
+
+    .banner-block {
+        margin: 0;
+    }
+
+    .banner-block h1 {
+        font-size: 21px;
+        margin: 0;
+    }
+
+    .tabs {
+        width: 250px;
+        padding: 0;
+    }
+
+    .tabs>section>p {
+        width: 250px;
+        font-size: 14px;
+    }
+
+    .tabs>label {
+        padding: 8px 12px;
+    }
+
+    .tabs>input:checked+label {
+        width: 25px;
+    }
+
+    .dropdown-b {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        height: 450px;
+        background-color: $primary-1;
+        top: 595px;
+    }
+    .drop-t {
+        margin: 0 10px 10px 10px;
+        display: block;
+        position: relative;
+    }
+    .number .raz {
+        width: 93px;
+        margin-bottom: 5px;
+    }
+    .btn3 {
+        background-color: $pr1-dark-1;
+        margin-top: 10px;
+        width: 200px;
+        height: 50px;
+    }
+}

@@ -19,6 +19,17 @@
     color: $color;
     padding: 10px;
 }
+@mixin Paragraph ($size:14px,$font:$font-regular,$color:$pr4-dark-1) {
+    font-size: $size;
+    font-family: $font;
+    color: $color;
+}
+@mixin head ($size:15px,$font:$font-regular,$color:$pr1-dark-1){
+    font-size: $size;
+    font-family: $font;
+    color: $color;
+    word-spacing: 3px;
+}
 @mixin Quotation($size:17px,$font:$font-regular,$color:$primary-1) {
     font-size: $size;
     font-family: $font;
@@ -53,8 +64,6 @@
     border-radius: 5px;
     margin-top: 20px;
     text-align: left;
-    padding-left: 2%;
-    
 }
 
     

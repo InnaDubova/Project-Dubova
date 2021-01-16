@@ -1,10 +1,9 @@
-
-
 .header {
     background-color: $primary-1;
     background-repeat: no-repeat;
 
 }
+
 .gab {
     font-family: $font-gabriola;
     color: $light;
@@ -93,6 +92,13 @@
     background-color: $primary-1;
     color: $light;
     border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .dropdown {
@@ -146,7 +152,12 @@
 }
 
 .dropdown-menu {
-    left: 200px;
+    left: 500px;
+    min-width: 125px;
+}
+
+.service>.dropdown-menu {
+    display: none;
 }
 
 .service {
@@ -191,20 +202,24 @@
     display: flex;
     margin: 10px 10px 10px 10px;
 }
+
 #menuToggle {
     display: block;
     position: relative;
     top: -35px;
     left: 1000px;
 }
+
 #menuToggle a {
     text-decoration: none;
     color: $primary-1;
     transition: color 0.3s ease;
 }
+
 #menuToggle a:hover {
     color: $primary-2;
 }
+
 #menuToggle input {
     display: block;
     width: 40px;
@@ -216,6 +231,7 @@
     opacity: 0;
     z-index: 2;
 }
+
 #menuToggle span {
     display: block;
     width: 33px;
@@ -227,8 +243,8 @@
     z-index: 1;
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-    opacity 0.55s ease;
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
 }
 
 #menuToggle span:first-child {
@@ -278,8 +294,15 @@
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
 }
+
 //-----------------------------------------------------------------------------------------
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
+    .header {
+        background-color: $primary-1;
+        background-repeat: no-repeat;
+        height: 105px;
+
+    }
     .dropdown {
         display: flex;
         flex-wrap: nowrap;
@@ -287,15 +310,18 @@
         margin-top: 45px;
         padding-left: 440px;
     }
+
     .phone {
         margin: 40px 0 -37px 730px;
-    
+
     }
+
     .but-2 {
         position: absolute;
         display: flex;
         margin: -70px 0px 10px 780px;
     }
+
     .but-2>.button1 {
         width: 100px;
         font-family: $font-sb;
@@ -303,14 +329,26 @@
         margin-top: 40px;
         margin-left: 0;
     }
+
     #menuToggle {
         display: block;
-    position: relative;
-    top: -35px;
-    left: 1000px;
+        position: relative;
+        top: -35px;
+        left: 1000px;
+    }
+
+    .image {
+        margin: 0px 10px;
     }
 }
-@media (min-width: 992px){
+
+@media (min-width: 992px) {
+     .header {
+         background-color: $primary-1;
+         background-repeat: no-repeat;
+         height: 105px;
+
+     }
     .dropdown {
         position: absolute;
         margin-top: -64px;
@@ -318,15 +356,18 @@
         justify-content: flex-start;
         align-items: center;
     }
+
     .phone {
-        margin:-68px 0 -32px 610px;
-    
+        margin: -68px 0 -32px 610px;
+
     }
+
     .but-2 {
         position: absolute;
         display: flex;
         margin: -62px 0px 10px 655px;
     }
+
     .but-2>.button1 {
         width: 100px;
         font-family: $font-sb;
@@ -334,23 +375,36 @@
         margin-top: 40px;
         margin-left: 0;
     }
+
     #menuToggle {
         display: block;
         position: relative;
         top: -25px;
         left: 875px;
     }
+     .image {
+         margin: 0px 10px;
+     }
 }
-@media (min-width: 768px){
+
+@media (min-width: 768px) {
+     .header {
+         background-color: $primary-1;
+         background-repeat: no-repeat;
+         height: 105px;
+
+     }
     .phone {
-        margin:-70px 0 -32px 315px;
-    
+        margin: -70px 0 -32px 315px;
+
     }
+
     .but-2 {
         position: absolute;
         display: flex;
         margin: -62px 0px 10px 390px;
     }
+
     .but-2>.button1 {
         width: 100px;
         font-family: $font-sb;
@@ -358,23 +412,36 @@
         margin-top: 40px;
         margin-left: 0;
     }
+
     #menuToggle {
         display: block;
         position: relative;
         top: -25px;
         left: 613px;
     }
+     .image {
+         margin: 0px 10px;
+     }
 }
-@media (min-width: 328px){
+
+@media (min-width: 320px) {
+     .header {
+         background-color: $primary-1;
+         background-repeat: no-repeat;
+         height: 157px;
+
+     }
     .phone {
-        margin:1px 0 -20px 12px;
-    
+        margin: 1px 0 -20px -11px;
+
     }
+
     .but-2 {
         position: absolute;
         display: flex;
-        margin: -55px 0px 10px 63px;
+        margin: -55px 0px 10px 43px;
     }
+
     .but-2>.button1 {
         width: 100px;
         font-family: $font-sb;
@@ -382,10 +449,14 @@
         margin-top: 40px;
         margin-left: 0;
     }
+
     #menuToggle {
         display: block;
         position: relative;
         top: -90px;
         left: 260px;
     }
+     .image {
+         margin: 0px -10px;
+     }
 }

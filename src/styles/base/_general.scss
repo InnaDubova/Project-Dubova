@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 $primary-1:#03a9f4;
 $primary-2:#f75e2e;
 $primary-3:#ecfa4d;
@@ -20,35 +21,35 @@ $primary-8:#21a5f8;
 $light:#ffff;
 $dark:#0000;
 
-$pr1-light-1: mix(#fff,$primary-1,40%);
-$pr2-light-1: mix(#fff,$primary-2,40%);
-$pr3-light-1: mix(#fff,$primary-3,40%);
-$pr4-light-1: mix(#fff,$primary-4,40%);
+$pr1-light-1: mix(#fff, $primary-1, 40%);
+$pr2-light-1: mix(#fff, $primary-2, 40%);
+$pr3-light-1: mix(#fff, $primary-3, 40%);
+$pr4-light-1: mix(#fff, $primary-4, 40%);
 
-$pr1-light-2: mix(#fff,$primary-1,75%);
-$pr2-light-2: mix(#fff,$primary-2,75%);
-$pr3-light-2: mix(#fff,$primary-3,75%);
-$pr4-light-2: mix(#fff,$primary-4,75%);
+$pr1-light-2: mix(#fff, $primary-1, 75%);
+$pr2-light-2: mix(#fff, $primary-2, 75%);
+$pr3-light-2: mix(#fff, $primary-3, 75%);
+$pr4-light-2: mix(#fff, $primary-4, 75%);
 
-$pr1-light-3: mix(#fff,$primary-1,90%);
-$pr2-light-3: mix(#fff,$primary-2,90%);
-$pr3-light-3: mix(#fff,$primary-3,90%);
-$pr4-light-3: mix(#fff,$primary-4,90%);
+$pr1-light-3: mix(#fff, $primary-1, 90%);
+$pr2-light-3: mix(#fff, $primary-2, 90%);
+$pr3-light-3: mix(#fff, $primary-3, 90%);
+$pr4-light-3: mix(#fff, $primary-4, 90%);
 
-$pr1-dark-1: mix(#000,$primary-1,20%);
-$pr2-dark-1: mix(#000,$primary-2,20%);
-$pr3-dark-1: mix(#000,$primary-3,20%);
-$pr4-dark-1: mix(#000,$primary-4,20%);
+$pr1-dark-1: mix(#000, $primary-1, 20%);
+$pr2-dark-1: mix(#000, $primary-2, 20%);
+$pr3-dark-1: mix(#000, $primary-3, 20%);
+$pr4-dark-1: mix(#000, $primary-4, 20%);
 
-$pr1-dark-2: mix(#000,$primary-1,50%);
-$pr2-dark-2: mix(#000,$primary-2,50%);
-$pr3-dark-2: mix(#000,$primary-3,50%);
-$pr4-dark-2: mix(#000,$primary-4,50%);
+$pr1-dark-2: mix(#000, $primary-1, 50%);
+$pr2-dark-2: mix(#000, $primary-2, 50%);
+$pr3-dark-2: mix(#000, $primary-3, 50%);
+$pr4-dark-2: mix(#000, $primary-4, 50%);
 
-$pr1-dark-3: mix(#000,$primary-1,70%);
-$pr2-dark-3: mix(#000,$primary-2,70%);
-$pr3-dark-3: mix(#000,$primary-3,70%);
-$pr4-dark-3: mix(#000,$primary-4,70%);
+$pr1-dark-3: mix(#000, $primary-1, 70%);
+$pr2-dark-3: mix(#000, $primary-2, 70%);
+$pr3-dark-3: mix(#000, $primary-3, 70%);
+$pr4-dark-3: mix(#000, $primary-4, 70%);
 
 $font-regular:'Pop-r';
 $font-medium:'Pop-m';
@@ -68,7 +69,7 @@ $font-myriad:'Myriad Pro';
 //         position: relative;
 //         display: flex;
 //         align-items: center;
-        
+
 
 //         &::before{
 //             content: '';
@@ -125,6 +126,14 @@ h6 {
     @include font(15px, $font-medium, $pr4-dark-2);
 }
 
+.Paragraph {
+    @include Paragraph;
+}
+
+.head {
+    @include head;
+}
+
 .subtitle {
     @include subtitle;
 
@@ -154,8 +163,7 @@ h6 {
 }
 
 .btn2 {
-    @include btn(280px, $primary-1, 50px, $font-medium);
-    text-transform: capitalize;
+    @include btn(280px, $pr1-dark-1, 50px, $font-medium);
 
     &:hover {
         background-color: $pr1-light-1;
@@ -324,9 +332,10 @@ h6 {
     .raz {
         all: unset;
         -moz-appearance: textfield;
-        width: 248px;
+        width: 200px;
         text-align: center;
     }
+
 
     .raz::-webkit-inner-spin-button {
         display: none;
@@ -344,16 +353,17 @@ h6 {
     cursor: pointer;
 }
 
-.dropdown {
+.dropdown-b {
     // position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 
 .dropdown-content {
     display: none;
     position: relative;
     background-color: $light;
-    min-width: 320px;
+    width: 200px;
     border: solid 1px $primary-4;
     border-radius: 2%;
     z-index: 1;
@@ -499,24 +509,22 @@ input[type=radio] {
 
 /* Базовый контейнер табов */
 .tabs {
-    min-width: 320px;
-    max-width: 800px;
-    padding: 0px;
-    margin: 0 auto;
+    width: 500px;
+    padding: 0;
 }
 
 .tabs>section {
     display: none;
-    padding: 15px;
-    background: #fff;
+    padding: 30px 0 30px 0;
 }
 
 .tabs>section>p {
-    margin: 0 0 5px;
-    line-height: 1.5;
+    width: 500px;
+    margin: 0 0 5px 5px;
+    line-height: auto;
     color: $pr4-dark-2;
     font-family: $font-regular;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .tabs>input {
@@ -543,6 +551,7 @@ input[type=radio] {
 }
 
 .tabs>input:checked+label {
+    width: 60px;
     color: $primary-2;
     font-family: $font-regular;
     font-size: 14px;
@@ -586,24 +595,24 @@ input[type=radio] {
 }
 
 //////dotted
- 
-  .pagination{
+
+.pagination {
     padding: 30px 0;
-  }
-  
-  .pagination ul{
+}
+
+.pagination ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-  }
-  
-  .pagination a{
-    display: inline-block;
-    
-  }
+}
 
-  
-  .p6 a{
+.pagination a {
+    display: inline-block;
+
+}
+
+
+.p6 a {
     width: 20px;
     height: 20px;
     border-radius: 100%;
@@ -612,39 +621,45 @@ input[type=radio] {
     text-align: center;
     position: relative;
     background-color: $pr4-light-1;
-  }
-  
-  .p6 .is-active{
+}
+
+.p6 .is-active {
     background-color: $light;
     border: 4px solid $primary-1;
-  }
-  .p6 a:hover{
+}
+
+.p6 a:hover {
     background-color: $light;
     border: 4px solid $primary-1;
-  }
-  
+}
+
 ////Social pics
 
-.icons{
+.icons {
     font-size: 15px;
 }
-.icons i{
+
+.icons i {
     margin-left: 40px;
 }
-.icons i:hover:nth-child(1){
-    color:#3b5999;
+
+.icons i:hover:nth-child(1) {
+    color: #3b5999;
 }
 
-.icons i:hover:nth-child(2){
-    color:#55acef;
+.icons i:hover:nth-child(2) {
+    color: #55acef;
 }
-.icons i:hover:nth-child(3){
-    color:#c1182a;
+
+.icons i:hover:nth-child(3) {
+    color: #c1182a;
 }
-.icons i:hover:nth-child(4){
-    color:#de4b39;
+
+.icons i:hover:nth-child(4) {
+    color: #de4b39;
 }
-.icons-f{
+
+.icons-f {
     font-size: 15px;
     color: $light;
     margin: 20px;
@@ -653,7 +668,8 @@ input[type=radio] {
     height: 70px;
     background-color: $primary-1;
 }
-.icons-f i{
+
+.icons-f i {
     margin-left: 30px;
     padding: 10px;
     width: 35px;
@@ -661,24 +677,26 @@ input[type=radio] {
     border: solid 1px $light;
     border-radius: 50%;
 }
-.icons-f i:hover{
+
+.icons-f i:hover {
     background-color: $pr1-dark-1;
     border: none;
 }
 
 /////Information popup
 
-.information{
+.information {
     width: 320px;
     height: 180px;
     margin: 10px 20px;
     border: solid 1px $pr4-light-1;
-    text-align: center ;
-    
+    text-align: center;
+
 }
-.information p{
+
+.information p {
     font-family: $font-light;
     font-size: 13px;
-    color: $pr4-dark-2 ;
+    color: $pr4-dark-2;
     padding: 25px;
 }
