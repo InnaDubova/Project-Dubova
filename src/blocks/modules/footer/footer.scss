@@ -1,0 +1,543 @@
+.footer{
+    background-color: $primary-1;
+    margin-top: 40px;
+}
+
+//------------------------------------------
+.gab {
+    font-family: $font-gabriola;
+    color: $light;
+    font-size: 39px;
+
+}
+.word {
+    font-family: $font-myriad;
+    color: $light;
+    font-size: 13px;
+}
+.name p {
+    margin: -15px 0;
+}
+
+.name {
+    padding: 20px 0;
+    align-items: flex-start;
+
+}
+
+.footer .image img {
+    width: 62px;
+    height: 65px;
+    float: left;
+    margin-right: 0;
+}
+
+.image {
+    margin: 0 10px;
+}
+
+.p2 {
+    width: 295px;
+}
+
+.logo {
+    margin-top: 16px;
+}
+//-----------------------------------------
+
+.f-header{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100wh;
+}
+.f-words{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-words h6{
+    color: $light;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    margin: 40px 0 0 154px;
+    word-spacing: 25px; 
+}
+.f-info{
+    display: flex;
+    margin: 40px 0;
+}
+.f-box{
+    margin: 0 88px 0 0;
+}
+.f-box h6{
+    font-size: 16px;
+    color: $light;
+    text-align: left;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+.f-box .Paragraph{
+    font-size: 13px;
+    color: $light;
+    line-height: 30px;
+}
+.f-end{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.f-tab h6{
+    font-size: 13px;
+    color: $light;
+    line-height: 16px;
+    
+}
+.f-tab img{
+    float: left;
+    padding: 10px 20px 0 0;
+}
+.f-tab .Paragraph{
+    font-size: 16px;
+    font-family: $font-bold;
+    color: $light;
+    margin-top: -5px;
+}
+.icons-f {
+    font-size: 15px;
+    color: #ffff;
+    margin: 7px;
+    padding: 0;
+    width: 300px;
+    height: 70px;
+}
+.icons-f i {
+    margin-left: 10px;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    border: solid 1px #ffff;
+    border-radius: 50%;
+}
+
+@media (min-width: 1200px){
+    .name {
+        padding: 20px 0;
+        align-items: flex-start;
+
+    }
+
+    .footer .image img {
+        width: 62px;
+        height: 65px;
+        float: left;
+        margin-right: 0;
+    }
+.footer {
+    background-color: $primary-1;
+    margin-top: 40px;
+}
+.f-header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100wh;
+}
+
+.f-words {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-words h6 {
+    color: $light;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    margin: 40px 0 0 154px;
+    word-spacing: 25px;
+}
+
+.f-info {
+    display: flex;
+    margin: 40px 0;
+}
+
+.f-box {
+    margin: 0 88px 0 0;
+}
+
+.f-box h6 {
+    font-size: 16px;
+    color: $light;
+    text-align: left;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.f-box .Paragraph {
+    font-size: 13px;
+    color: $light;
+    line-height: 30px;
+}
+
+.f-end {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.f-tab h6 {
+    font-size: 13px;
+    color: $light;
+    line-height: 16px;
+
+}
+
+.f-tab img {
+    float: left;
+    padding: 10px 20px 0 0;
+}
+
+.f-tab .Paragraph {
+    font-size: 16px;
+    font-family: $font-bold;
+    color: $light;
+    margin-top: -5px;
+}
+
+.icons-f {
+    font-size: 15px;
+    color: #ffff;
+    margin: 7px;
+    padding: 0;
+    width: 300px;
+    height: 70px;
+}
+
+.icons-f i {
+    margin-left: 10px;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    border: solid 1px #ffff;
+    border-radius: 50%;
+}
+}
+
+@media (min-width: 992px){
+    .name {
+        padding: 20px 0;
+        align-items: flex-start;
+
+    }
+
+    .footer .image img {
+        width: 62px;
+        height: 65px;
+        float: left;
+        margin-right: 0;
+    }
+.footer {
+    background-color: $primary-1;
+    margin-top: 40px;
+}
+
+.f-header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100wh;
+}
+
+.f-words {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-words h6 {
+    color: $light;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    margin: 40px 0 0 110px;
+    word-spacing: 20px;
+}
+
+.f-info {
+    display: flex;
+    margin: 40px 0;
+}
+
+.f-box {
+    margin: 0 40px 0 0;
+}
+
+.f-box h6 {
+    font-size: 15px;
+    color: $light;
+    text-align: left;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.f-box .Paragraph {
+    font-size: 13px;
+    color: $light;
+    line-height: 25px;
+}
+
+.f-end {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.f-tab h6 {
+    font-size: 10px;
+    color: $light;
+    line-height: 16px;
+
+}
+
+.f-tab img {
+    float: left;
+    padding: 10px 20px 0 0;
+}
+
+.f-tab .Paragraph {
+    font-size: 13px;
+    font-family: $font-bold;
+    color: $light;
+    margin-top: -10px;
+}
+
+.icons-f {
+    font-size: 15px;
+    color: #ffff;
+    margin: 7px 0 7px 10px;
+    padding: 0;
+    width: 230px;
+    height: 70px;
+}
+
+.icons-f i {
+    margin-left: 10px;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    border: solid 1px #ffff;
+    border-radius: 50%;
+}
+}
+
+@media (min-width: 768px){
+    .name {
+        padding: 20px 0;
+        align-items: flex-start;
+
+    }
+
+    .footer .image img {
+        width: 62px;
+        height: 65px;
+        float: left;
+        margin-right: 0;
+    }
+.footer {
+    background-color: $primary-1;
+    margin-top: 40px;
+}
+
+.f-header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100wh;
+}
+
+.f-words {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-words h6 {
+    color: $light;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 0;
+    text-align: right;
+    margin: 0 0 0 60px;
+    word-spacing: 20px;
+}
+
+.f-info {
+    display: flex;
+    margin: 40px 0;
+}
+
+.f-box {
+    margin: 0 25px 0 0;
+}
+
+.f-box h6 {
+    font-size: 14px;
+    color: $light;
+    text-align: left;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.f-box .Paragraph {
+    font-size: 10px;
+    color: $light;
+    line-height: 20px;
+}
+
+.f-end {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.f-tab h6 {
+    font-size: 7px;
+    color: $light;
+    line-height: 15px;
+
+}
+
+.f-tab img {
+    float: left;
+    padding: 10px 20px 0 0;
+}
+
+.f-tab .Paragraph {
+    font-size: 10px;
+    font-family: $font-bold;
+    color: $light;
+    margin-top: -10px;
+}
+
+.icons-f {
+    font-size: 15px;
+    color: #ffff;
+    margin: 7px 0 7px 0;
+    padding: 0;
+    width: 195px;
+    height: 70px;
+}
+
+.icons-f i {
+    margin-left: 5px;
+    padding: 7px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px #ffff;
+    border-radius: 50%;
+}
+}
+
+@media (min-width: 320px){
+    .name {
+        padding: 20px 15px;
+        align-items: flex-start;
+
+    }
+
+    .footer .image img {
+        width: 62px;
+        height: 65px;
+        float: left;
+        margin-right: 20px;
+    }
+.footer {
+    background-color: $primary-1;
+    margin-top: 60px;
+}
+
+// .f-header {
+//     display: grid;
+//     grid-template-columns: 30% 70%;
+//     width: 100wh;
+// }
+
+// .f-words {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .f-words h6 {
+//     color: $light;
+//     text-transform: uppercase;
+//     font-size: 12px;
+//     line-height: 16px;
+//     text-align: right;
+//     margin: 40px 0 0 110px;
+//     word-spacing: 20px;
+// }
+
+// .f-info {
+//     display: flex;
+//     margin: 40px 0;
+// }
+
+// .f-box {
+//     margin: 0 40px 0 0;
+// }
+
+// .f-box h6 {
+//     font-size: 15px;
+//     color: $light;
+//     text-align: left;
+//     padding-left: 0;
+//     margin-bottom: 30px;
+// }
+
+// .f-box .Paragraph {
+//     font-size: 13px;
+//     color: $light;
+//     line-height: 25px;
+// }
+
+.f-end {
+   display: block;
+}
+
+.f-tab h6 {
+    font-size: 13px;
+    color: $light;
+    line-height: 16px;
+
+}
+
+.f-tab img {
+    float: left;
+    padding: 10px 20px 0 10px;
+}
+
+.f-tab .Paragraph {
+    font-size: 16px;
+    font-family: $font-bold;
+    color: $light;
+    margin-top: -10px;
+}
+
+.icons-f {
+    font-size: 15px;
+    color: #ffff;
+    margin: 7px 0 7px 0;
+    padding: 0;
+    width: 230px;
+    height: 40px;
+}
+
+.icons-f i {
+    margin-left: 10px;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    border: solid 1px #ffff;
+    border-radius: 50%;
+}
+}

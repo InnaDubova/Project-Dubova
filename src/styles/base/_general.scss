@@ -104,10 +104,10 @@ h1 {
 h2 {
     @include font(33px, $font-medium, $pr4-dark-2);
 
-    &:hover {
-        color: $light;
-        background-color: $primary-1;
-    }
+    // &:hover {
+    //     color: $light;
+    //     background-color: $primary-1;
+    // }
 }
 
 h3 {

@@ -1,0 +1,470 @@
+.discount {
+    background-color: $primary-1;
+    background-image: url(../../../img/clouds.png);
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-position: bottom;
+    height: 530px;
+}
+
+.dis-all {
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.dis-all .head {
+    margin-top: 55px;
+    color: $light;
+}
+
+.dis-all h2 {
+    color: $light;
+    margin: 35px 0;
+}
+
+.dis-all h4 {
+    color: $light;
+    font-size: 20px;
+    padding: 0 230px;
+    line-height: 30px;
+}
+
+.rocket {
+    position: absolute;
+    top: 180px;
+    left: -35px;
+}
+
+.dis-block {
+    margin: 65px 0 20px 145px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    position: absolute;
+    width: 900px;
+    height: 450px;
+    position: relative;
+    filter: drop-shadow(-5px 5px 5px $pr4-light-1);
+}
+
+.dis-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: $light;
+}
+
+.dis15 {
+    background-color: $primary-1;
+}
+
+.sale {
+    margin: 0;
+    padding: 10px;
+    width: 400px;
+    height: 450px;
+}
+
+.dis-box {
+    display: block;
+    text-align: center;
+    width: 270px;
+    height: 225px;
+    
+}
+
+.dis-box h1 {
+    color: $primary-2;
+    line-height: 40px;
+    padding: 0 60px;
+    margin: 35px 0 15px 0;
+    font-size: 42px;
+}
+
+.dis-box h3 {
+    color: $pr1-dark-1;
+    padding: 0 60px;
+    margin: 0 0 20px 0;
+    font-size: 17px;
+}
+
+.dis-box p {
+    margin-left: 0;
+    margin-bottom: 5px;
+}
+.dis-line{
+    position: absolute;
+    top: 555px;
+    left: 175px;
+    width: 460px;
+}
+.dis-line2{
+    position: absolute;
+     top: 360px;
+     left: 420px;
+    height: 380px;
+}
+
+@media (min-width: 1200px){
+.dis-all .head {
+    margin-top: 55px;
+    color: $light;
+}
+
+.dis-all h2 {
+    color: $light;
+    margin: 35px 0;
+}
+
+.dis-all h4 {
+    color: $light;
+    font-size: 20px;
+    padding: 0 230px;
+    line-height: 30px;
+}
+
+.rocket {
+    position: absolute;
+    top: 180px;
+    left: -35px;
+}
+
+.dis-block {
+    margin: 65px 0 20px 145px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    position: absolute;
+    width: 900px;
+    height: 450px;
+    position: relative;
+    filter: drop-shadow(-5px 5px 5px $pr4-light-1);
+}
+
+.dis-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: $light;
+}
+
+.dis15 {
+    background-color: $primary-1;
+}
+
+.sale {
+    margin: 0;
+    padding: 10px;
+    width: 400px;
+    height: 450px;
+}
+
+.dis-box {
+    display: block;
+    text-align: center;
+    width: 270px;
+    height: 225px;
+
+}
+
+.dis-box h1 {
+    color: $primary-2;
+    line-height: 40px;
+    padding: 0 60px;
+    margin: 35px 0 15px 0;
+    font-size: 42px;
+}
+
+.dis-box h3 {
+    color: $pr1-dark-1;
+    padding: 0 60px;
+    margin: 0 0 20px 0;
+    font-size: 17px;
+}
+
+.dis-box p {
+    margin-left: 0;
+    margin-bottom: 5px;
+}
+
+.dis-line {
+    position: absolute;
+    top: 555px;
+    left: 180px;
+    width: 460px;
+}
+
+.dis-line2 {
+    position: absolute;
+    top: 360px;
+    left: 420px;
+    height: 380px;
+}
+}
+
+@media (min-width: 992px){
+.dis-all .head {
+    margin-top: 55px;
+    color: $light;
+}
+
+.dis-all h2 {
+    color: $light;
+    margin: 35px 0;
+}
+
+.dis-all h4 {
+    color: $light;
+    font-size: 20px;
+    padding: 0 230px;
+    line-height: 30px;
+}
+
+.rocket {
+    position: absolute;
+    top: 180px;
+    left: -35px;
+}
+
+.dis-block {
+    margin: 65px 0 20px 25px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    position: absolute;
+    width: 900px;
+    height: 450px;
+    position: relative;
+    filter: drop-shadow(-5px 5px 5px $pr4-light-1);
+}
+
+.dis-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: $light;
+}
+
+.dis15 {
+    background-color: $primary-1;
+}
+
+.sale {
+    margin: 0;
+    padding: 10px;
+    width: 400px;
+    height: 450px;
+}
+
+.dis-box {
+    display: block;
+    text-align: center;
+    width: 270px;
+    height: 225px;
+
+}
+
+.dis-box h1 {
+    color: $primary-2;
+    line-height: 40px;
+    padding: 0 60px;
+    margin: 35px 0 15px 0;
+    font-size: 42px;
+}
+
+.dis-box h3 {
+    color: $pr1-dark-1;
+    padding: 0 60px;
+    margin: 0 0 20px 0;
+    font-size: 17px;
+}
+
+.dis-box p {
+    margin-left: 0;
+    margin-bottom: 5px;
+}
+
+.dis-line {
+    position: absolute;
+    top: 575px;
+    left: 60px;
+    width: 460px;
+}
+
+.dis-line2 {
+    position: absolute;
+    top: 390px;
+    left: 300px;
+    height: 380px;
+}
+}
+
+@media (min-width: 768px){
+.dis-all .head {
+    margin-top: 55px;
+    color: $light;
+}
+
+.dis-all h2 {
+    color: $light;
+    margin: 35px 0;
+    
+}
+
+.dis-all h4 {
+    color: $light;
+    font-size: 20px;
+    padding: 0 178px;
+    line-height: 30px;
+}
+
+.rocket {
+    position: absolute;
+    top: 160px;
+    left: -35px;
+}
+
+.dis-block {
+    margin: 50px 0 20px 25px;
+    display: grid;
+    grid-template-columns: 47% 27%;
+    position: absolute;
+    width: 900px;
+    height: 320px;
+    position: relative;
+    filter: drop-shadow(-5px 5px 5px $pr4-light-1);
+}
+
+.dis-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: $light;
+}
+
+.dis15 {
+    background-color: $primary-1;
+}
+
+.sale {
+    margin: 0;
+    padding: 10px;
+    width: 270px;
+    height: 300px;
+}
+
+.dis-box {
+    display: block;
+    text-align: center;
+    width: 210px;
+    height: 160px;
+
+}
+
+.dis-box h1 {
+    color: $primary-2;
+    line-height: 30px;
+    padding: 0 60px;
+    margin: 25px 0 10px 0;
+    font-size: 30px;
+}
+
+.dis-box h3 {
+    color: $pr1-dark-1;
+    padding: 0 60px;
+    margin: 0 0 20px 0;
+    font-size: 17px;
+}
+
+.dis-box p {
+    margin-left: 0;
+    margin-bottom: 5px;
+}
+
+.dis-line {
+    position: absolute;
+    top: 535px;
+    left: 60px;
+    width: 350px;
+}
+
+.dis-line2 {
+    position: absolute;
+    top: 390px;
+    left: 240px;
+    height: 280px;
+}
+}
+
+@media (min-width: 320px){
+.dis-all .head {
+    margin-top: 55px;
+    color: $light;
+}
+
+.dis-all h2 {
+    color: $light;
+    margin: 35px 0;
+
+}
+
+.dis-all h4 {
+    color: $light;
+    font-size: 20px;
+    padding: 0 30px;
+    line-height: 30px;
+}
+
+.dis-block {
+    margin: 50px 0 20px 18px;
+    display: block;
+    position: absolute;
+    width: 270px;
+    height: 320px;
+    position: relative;
+    filter: drop-shadow(-5px 5px 5px $pr4-light-1);
+}
+
+.dis-boxes {
+    display: block;
+    background-color: $light;
+}
+
+.dis15 {
+    background-color: $primary-1;
+}
+
+.sale {
+    margin: 0 15px;
+    padding: 10px ;
+    width: 275px;
+    height: 305px;
+}
+
+.dis-box {
+    display: block;
+    text-align: center;
+    width: 210px;
+    height: 160px;
+
+}
+
+.dis-box h1 {
+    color: $primary-2;
+    line-height: 30px;
+    padding: 30px 60px 0 60px;
+    margin: 25px 0 10px 50px;
+    font-size: 30px;
+}
+
+.dis-box h3 {
+    color: $pr1-dark-1;
+    padding: 0 29px;
+    margin: 0 0 20px 65px;
+    font-size: 17px;
+}
+
+.dis-box p {
+    margin-left: 65px;
+    margin-bottom: 5px;
+}
+
+}
